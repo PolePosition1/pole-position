@@ -1,43 +1,40 @@
 /* ============================================================
    POLE POSITION — DESIGN TOKENS (CSS Custom Properties)
-   v1.0.0  ·  Source of truth: brand/tokens.json
+   v1.1.0  ·  "Champion" system  ·  Source of truth: brand/tokens.json
    ------------------------------------------------------------
-   Drop this file into any web artifact, landing page, or the
-   app itself. Every color/type/space value below maps 1:1 to
-   tokens.json. Change a value here and you re-skin everything.
+   Derived directly from the Pole Position logo: champion gold +
+   checkered flag + speed red, on racing black. Change a value
+   here and you re-skin everything.
    ============================================================ */
 
 :root {
   /* ---- Surfaces ---- */
-  --pp-lights-out: #0A0E17;   /* primary background */
-  --pp-carbon:     #14181F;   /* cards, sheets, nav */
-  --pp-pit-wall:   #1E242E;   /* inputs, hover fills */
-  --pp-line:       #2A3340;   /* borders, dividers */
+  --pp-lights-out: #0B0D12;   /* primary background */
+  --pp-carbon:     #15171E;   /* cards, sheets, nav */
+  --pp-pit-wall:   #1F222B;   /* inputs, hover fills */
+  --pp-line:       #2C313C;   /* borders, dividers */
 
-  /* ---- Purple (signature) ---- */
-  --pp-purple-200: #D9B8FF;   /* links / brand text on dark */
-  --pp-purple-400: #B47CFF;
-  --pp-purple-500: #9B2FFF;   /* PRIMARY brand */
-  --pp-purple-700: #7A1FCC;
-  --pp-purple-900: #3D0F66;
+  /* ---- Checkered flag (signature motif) ---- */
+  --pp-flag-white: #FFFFFF;
+  --pp-flag-black: #0A0A0A;
 
-  /* ---- Go Green (success) ---- */
+  /* ---- Champion Gold (signature) ---- */
+  --pp-gold-200: #FFE6A8;   /* highlight / gold text on dark */
+  --pp-gold-400: #F4CB6A;
+  --pp-gold-500: #E9B23A;   /* PRIMARY brand — champion / pole / P1 */
+  --pp-gold-700: #B8780F;   /* bronze shadow / pressed */
+  --pp-gold-900: #3D2A07;   /* subtle tinted fills */
+
+  /* ---- Speed Red (accent / lock / danger / the model) ---- */
+  --pp-red-400:    #FF5A4D;
+  --pp-red-500:    #E00000;
+  --pp-red-700:    #A60000;
+  --pp-red-orange: #FF3B00;  /* speed-gradient endpoint only */
+
+  /* ---- Go Green (functional success / correct only) ---- */
   --pp-green-400:  #5CFFA8;
   --pp-green-500:  #00E676;
   --pp-green-700:  #00B85E;
-
-  /* ---- Pole Red (the model / lock / DNF) ---- */
-  --pp-red-400:    #FF6B78;
-  --pp-red-500:    #FF2436;
-  --pp-red-700:    #CC1424;
-
-  /* ---- Amber (closing / caution) ---- */
-  --pp-amber-400:  #FFD24D;
-  --pp-amber-500:  #FFB800;
-  --pp-amber-700:  #CC9300;
-
-  /* ---- Accent blue (gradient & link-hover only) ---- */
-  --pp-blue-500:   #2D7FFF;
 
   /* ---- Text ---- */
   --pp-text:       #FFFFFF;   /* headlines, key numbers */
@@ -46,8 +43,8 @@
   --pp-text-faint: #5A626E;   /* labels / disabled — large only */
 
   /* ---- Gradients ---- */
-  --pp-grad-pole:   linear-gradient(135deg, #9B2FFF 0%, #2D7FFF 100%);
-  --pp-grad-podium: linear-gradient(135deg, #FFB800 0%, #FF2436 100%);
+  --pp-grad-gold:  linear-gradient(135deg, #FFE6A8 0%, #E9B23A 45%, #B8780F 100%);
+  --pp-grad-speed: linear-gradient(135deg, #FF3B00 0%, #E00000 100%);
 
   /* ---- Type families ---- */
   --pp-font-display: "Saira", system-ui, sans-serif;
@@ -67,12 +64,11 @@
   /* ---- Elevation ---- */
   --pp-elev-1: 0 1px 2px rgba(0,0,0,0.40);
   --pp-elev-2: 0 4px 12px rgba(0,0,0,0.50);
-  --pp-glow-purple: 0 0 24px rgba(155,47,255,0.35);
-  --pp-glow-green:  0 0 20px rgba(0,230,118,0.30);
+  --pp-glow-gold: 0 0 24px rgba(233,178,58,0.40);
+  --pp-glow-red:  0 0 20px rgba(224,0,0,0.32);
 }
 
 /* ---- Font loading (Google Fonts) ----
-   Add to <head>, or @import at the very top of your stylesheet:
    @import url('https://fonts.googleapis.com/css2?family=Saira:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
 */
 

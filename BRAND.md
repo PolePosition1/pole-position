@@ -11,12 +11,13 @@ on brand.
 ---
 
 ## The idea in one paragraph
-Pole Position is a **timing screen you compete inside.** It lives on near-black,
-moves fast, and uses one signature color — **purple, the timing-screen color for
-*the fastest / the best*** — to mark winning. The AI model is your rival: it has
-already locked its picks and it's waiting for you to fall short. The brand's job
-is to make calling the grid feel like skill, adrenaline, and bragging rights —
-never gambling.
+Pole Position is a **championship you compete inside.** It lives on racing black
+and is built from its own logo: **champion gold** (winning / pole / P1), the
+**black-and-white checkered flag** (the finish, the grid, the texture), and
+**speed red** (motion and urgency). The AI model is your rival — it has already
+locked its picks and it's waiting for you to fall short. The brand's job is to
+make calling the grid feel like skill, adrenaline, and bragging rights — never
+gambling.
 
 ## What's in this folder
 | File | What it covers |
@@ -28,27 +29,29 @@ never gambling.
 | `brand/colors.md` | Palette, usage, contrast rules. |
 | `brand/typography.md` | Type system + font loading. |
 | `brand/voice-and-tone.md` | Copy rules, lexicon, do/don't. |
-| `brand/logo.md` | Mark construction, clear space, misuse. |
+| `brand/logo.md` | The mark, lockups, clear space, misuse. |
 | `brand/components.md` | UI component & pattern specs. |
-| `assets/` | Logos, fonts, icons, social templates (drop files here). |
+| `assets/logos/pole-position-logo.png` | The primary logo. |
+| `assets/` | Logos, fonts, icons, social templates. |
 | `templates/` | Repeatable asset specs (result cards, social). |
+| `_inspiration-local/` | Mood board for creative angles. **Local only — not committed (driver/team IP).** |
 
 ## The five fixed points (don't drift)
-1. **Black canvas.** Lights Out `#0A0E17` is home. Everything sits on it.
-2. **Purple is the win.** `#9B2FFF` = best / fastest / winner / primary action. Earned, never everywhere.
-3. **Numbers are mono and tabular.** Scores and leaderboards never jitter.
-4. **The model is the rival.** Personified, confident, data-driven, beatable.
-5. **Skill, not gambling.** Prediction, points, bragging rights. No bet/odds/wager — ever.
+1. **Black canvas.** Lights Out `#0B0D12` is home. Everything sits on it.
+2. **Gold is the win.** `#E9B23A` = champion / pole / P1 / primary action. Earned, never everywhere.
+3. **The checkered flag is the texture.** Straight from the logo — the brand's signature device.
+4. **Numbers are mono and tabular.** Scores and leaderboards never jitter.
+5. **The model is the rival, and it's skill not gambling.** No bet/odds/wager — ever.
 
 ## Relationship to WhiskeyRiverMedia
-Pole Position is **its own brand**, not a WRM sub-brand. WRM is carbon + **gold +
-AMG teal**, Playfair display type, luxury-agency feel. Pole Position is
-**black + purple**, Saira/Inter/JetBrains Mono, competitive-game feel. They should
-never be confused. (Shared DNA: motorsport roots, dark base, mono labels — that's it.)
+Pole Position is **its own brand**, not a WRM sub-brand. Both use gold, so keep them
+distinct: WRM is **antique/mustard gold + AMG teal + carbon**, Playfair luxury type.
+Pole Position is a **brighter champion gold + checkered flag + speed red**, Saira sport
+type, **no teal**. The checkered-flag motif and the brighter gold are the separators.
 
 ## Versioning
-Tokens are versioned in `tokens.json` (`v1.0.0`). When a core value changes, bump
-the version and update `tokens.css` + `tailwind.preset.js` in the same commit so
-the three never drift apart.
+Tokens are versioned in `tokens.json` (`v1.1.0` — Champion system, derived from the
+logo). When a core value changes, bump the version and update `tokens.css` +
+`tailwind.preset.js` in the same commit so the three never drift apart.
 
 — *Pole Position. Lights out. Lock in.*

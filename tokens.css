@@ -1,0 +1,97 @@
+/* ============================================================
+   POLE POSITION — DESIGN TOKENS (CSS Custom Properties)
+   v1.0.0  ·  Source of truth: brand/tokens.json
+   ------------------------------------------------------------
+   Drop this file into any web artifact, landing page, or the
+   app itself. Every color/type/space value below maps 1:1 to
+   tokens.json. Change a value here and you re-skin everything.
+   ============================================================ */
+
+:root {
+  /* ---- Surfaces ---- */
+  --pp-lights-out: #0A0E17;   /* primary background */
+  --pp-carbon:     #14181F;   /* cards, sheets, nav */
+  --pp-pit-wall:   #1E242E;   /* inputs, hover fills */
+  --pp-line:       #2A3340;   /* borders, dividers */
+
+  /* ---- Purple (signature) ---- */
+  --pp-purple-200: #D9B8FF;   /* links / brand text on dark */
+  --pp-purple-400: #B47CFF;
+  --pp-purple-500: #9B2FFF;   /* PRIMARY brand */
+  --pp-purple-700: #7A1FCC;
+  --pp-purple-900: #3D0F66;
+
+  /* ---- Go Green (success) ---- */
+  --pp-green-400:  #5CFFA8;
+  --pp-green-500:  #00E676;
+  --pp-green-700:  #00B85E;
+
+  /* ---- Pole Red (the model / lock / DNF) ---- */
+  --pp-red-400:    #FF6B78;
+  --pp-red-500:    #FF2436;
+  --pp-red-700:    #CC1424;
+
+  /* ---- Amber (closing / caution) ---- */
+  --pp-amber-400:  #FFD24D;
+  --pp-amber-500:  #FFB800;
+  --pp-amber-700:  #CC9300;
+
+  /* ---- Accent blue (gradient & link-hover only) ---- */
+  --pp-blue-500:   #2D7FFF;
+
+  /* ---- Text ---- */
+  --pp-text:       #FFFFFF;   /* headlines, key numbers */
+  --pp-text-2:     #E8EAED;   /* body (Ghost) */
+  --pp-text-muted: #9AA3AF;   /* captions */
+  --pp-text-faint: #5A626E;   /* labels / disabled — large only */
+
+  /* ---- Gradients ---- */
+  --pp-grad-pole:   linear-gradient(135deg, #9B2FFF 0%, #2D7FFF 100%);
+  --pp-grad-podium: linear-gradient(135deg, #FFB800 0%, #FF2436 100%);
+
+  /* ---- Type families ---- */
+  --pp-font-display: "Saira", system-ui, sans-serif;
+  --pp-font-body:    "Inter", system-ui, sans-serif;
+  --pp-font-mono:    "JetBrains Mono", ui-monospace, monospace;
+
+  /* ---- Spacing (4px base) ---- */
+  --pp-space-1: 4px;   --pp-space-2: 8px;   --pp-space-3: 12px;
+  --pp-space-4: 16px;  --pp-space-5: 20px;  --pp-space-6: 24px;
+  --pp-space-8: 32px;  --pp-space-10: 40px; --pp-space-12: 48px;
+  --pp-space-16: 64px; --pp-space-20: 80px;
+
+  /* ---- Radius ---- */
+  --pp-radius-sm: 6px;  --pp-radius-md: 10px; --pp-radius-lg: 16px;
+  --pp-radius-xl: 24px; --pp-radius-pill: 9999px;
+
+  /* ---- Elevation ---- */
+  --pp-elev-1: 0 1px 2px rgba(0,0,0,0.40);
+  --pp-elev-2: 0 4px 12px rgba(0,0,0,0.50);
+  --pp-glow-purple: 0 0 24px rgba(155,47,255,0.35);
+  --pp-glow-green:  0 0 20px rgba(0,230,118,0.30);
+}
+
+/* ---- Font loading (Google Fonts) ----
+   Add to <head>, or @import at the very top of your stylesheet:
+   @import url('https://fonts.googleapis.com/css2?family=Saira:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+*/
+
+/* ---- Base helpers (optional starting point) ---- */
+body {
+  background: var(--pp-lights-out);
+  color: var(--pp-text-2);
+  font-family: var(--pp-font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+h1, h2, h3 { font-family: var(--pp-font-display); color: var(--pp-text); }
+.pp-data, .pp-score, .pp-timer {
+  font-family: var(--pp-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+.pp-label {
+  font-family: var(--pp-font-mono);
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--pp-text-muted);
+}
